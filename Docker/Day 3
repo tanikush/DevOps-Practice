@@ -1,0 +1,30 @@
+**29-9-2025  Monday**
+## **Day 3 Docker Practice Tasks**
+
+1. Create a Docker volume and attach it to a container.
+2. Inspect a Docker network and its connected containers.
+3. Connect a container to a custom network.
+4. Remove an unused Docker volume.
+5. Remove an unused Docker network.
+6. Build a Docker image from a Dockerfile.
+7. Push a Docker image to Docker Hub.
+8. Run a container with environment variables.
+9. Limit container CPU and memory usage.
+10. Remove all stopped containers, unused networks, and dangling images.
+
+**Solution***
+
+1. docker volume create myvolume
+   docker run -d -v myvolume:/data ubuntu
+2. docker network inspect netwrok_name
+3. docker netwrok create mynetwroknetwork
+4. docker volume prume 
+   docker volume rm myvolume
+5. docker network rm mynetwork
+6. docker build -t myimage:tag /path/to/dockerfile_directory
+7.  docker login
+    docker tag myimage:tag username/myimage:tag
+    docker push username/myimage:tag
+8. docker run -e VAR_NAME=value -it ubuntu bash
+9. docker run -it --cpus="1" --memory="500m" ubuntu
+10. docker system prune -f

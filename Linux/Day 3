@@ -1,0 +1,58 @@
+***29-9-2025 Monday***
+## **Day 3 Linux Practice Tasks**
+
+1. Find all files modified in the last 7 days.
+2. Display system uptime and load averages.
+3. Show all users currently logged in along with their activities.
+4. Search for files containing a specific text recursively in a directory.
+5. Count the number of lines, words, and characters in a file.
+6. Compress a directory using `tar` and `gzip`.
+7. Extract a compressed archive.
+8. Display disk usage of all directories in the current path.
+9. Create a hard link for a file.
+10. Monitor real-time network usage.
+
+**Solution***
+---
+First some create directory or file:-
+mkdir linux_practice
+cd linux_practice
+mkdir Dir1 Dir2
+echo "Hello World" > file1.txt
+echo "Linux Practice Line" > Dir1/file2.txt
+echo "Day 3 Task" > Dir2/file3.txt
+---
+
+1. find /linux_practice -type f -mtime -7
+   /home/tanisha/linux_practice/file1.txt
+   /home/tanisha/linux_practice/Dir1/file2.txt
+   /home/tanisha/linux_practice/Dir2/file3.txt
+
+2. uptime
+    12:08:46 up 16 min,  1 user,  load average: 0.00, 0.09, 0.20
+
+3.  who and w
+    12:11:56 up 16 min,  1 user,  load average: 0.00, 0.04, 0.16
+    USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU    WHAT
+    tanisha  tty2                      11:53    19:10  0.06s 0.06s    /usr/libexec/gn
+4.  grep -rn "Day 3 Task" ~/linux_practice
+5.  wc ~/linux_practice/file1.txt
+    1 2 12 /home/tanisha/linux_practice/file1.txt
+6.  tar -czvf Dir1.tar.gz. Dir1/
+    Dir1/
+    Dir1/file2.txt
+7.  tar -xzvf Dir1.tar.gz
+8.  du -h --max=depth=1
+    8.0k  ./Dir1
+    8.0k  ./Dir2
+    20k
+9.  ln file1.txt file1_hardlink_txt
+    ls -li
+    12345678 -rw-r--r-- 2 tanisha tanisha 12 Sep 29 12:00 file1.txt
+    12345678 -rw-r--r-- 2 tanisha tanisha 12 Sep 29 12:00 file1_hardlink.txt
+
+10. sudo apt update
+    sudo apt install -iftop -y
+    sudo -iftop
+    ctrl+c = exit
+    netstat -i

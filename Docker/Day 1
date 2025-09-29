@@ -1,0 +1,30 @@
+**27-9-2025  Saturday**
+**Day 1. Docker Practice**
+
+
+1. Check if Docker is installed and its version.
+2. Run a simple Docker container (hello-world).
+3. List all running and stopped containers.
+4. List all Docker images on your system.
+5. Pull an image from Docker Hub (e.g., Ubuntu).
+6. Run an interactive container with bash shell.
+7. Exit the container without stopping it.
+8. Stop a running container.
+9. Remove a stopped container.
+10. Remove a Docker image.
+
+
+
+***Solution***
+
+1. PS C:\\Users\\TANISHA> docker --version
+    Docker version 28.4.0, build d8eb465
+2. PS C:\\Users\\TANISHA> docker run hello-world
+3. PS C:\\Users\\TANISHA> docker ps -a
+4. PS C:\\Users\\TANISHA> docker images
+5. PS C:\\Users\\TANISHA> docker pull ubuntu
+6. PS C:\\Users\\TANISHA> docker run -it ubuntu bash
+7. PS C:\\Users\\TANISHA> docker rm ubuntu
+8. PS C:\\Users\\TANISHA> CTRL +P+Q
+9. PS C:\\Users\\TANISHA> docker stop ubuntu(fervent\_bardeen)
+10. PS C:\\Users\\TANISHA> docker rmi ubuntu / docker rmi -f ubuntu

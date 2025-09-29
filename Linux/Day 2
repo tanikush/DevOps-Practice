@@ -1,0 +1,25 @@
+***28-9-2025 Sunday***
+***Day 2. Linux Practice***
+
+1. Check all currently running processes.
+2. Find the process ID (PID) of a specific process.
+3. Kill a process using its PID.
+4. Display the last 10 lines of a file.
+5. Monitor real-time system resource usage (CPU, memory).
+7. Search for a specific word in a file.
+8. Display the first 5 lines of a file.
+9. Create a symbolic link for a file.
+10. Change file permissions and ownership.
+
+***Solution***
+
+1. ps aux
+2. ps aux | grep process_name
+3. kill 33
+4. tail filename.txt  
+5. touch empty.txt
+6. top
+7. grep "line" filename.txt 
+8. tail filename.txt
+9. touch filename.txt | pwd | find /home/tanisha -name "filename.txt" | ln -s /home/tanisha/filename.txt myline.txt | cat mylink.txt
+10. chmod 755 filename.txt | chown user:group filename.txt

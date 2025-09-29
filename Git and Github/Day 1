@@ -1,0 +1,30 @@
+**27-9-2025  Saturday**
+**Day 1. Git \& GitHub Practice**
+
+
+1. Check if Git is installed and display its version.
+2. Configure your Git username and email.
+3. Initialize a new Git repository in a folder.
+4. Check the status of the Git repository.
+5. Create a new file and add it to staging.
+6. Commit the staged changes with a message.
+7. View the commit history.
+8. Create a new branch.
+9. Switch between branches.
+10. Merge a branch into the main branch.
+
+
+***Solution***
+
+1. git --version
+2. git config --global user.name "tanikush"
+   git config --global user.email "tanisha206guttu@gmail.com"
+3. git init
+4. git status
+5. touch newfile / git add newfile.txt
+6. git commit -m "initiak commit"
+7. git log
+8. git branch new-branch(master)
+9. git checkout new-branch
+10. git checkout main
+    git merge new-branch

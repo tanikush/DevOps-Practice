@@ -1,0 +1,29 @@
+**29-9-2025  Monday**
+## **Day 3 Git & GitHub Practice Tasks**
+
+1. Resolve a merge conflict between two branches.
+2. Stash uncommitted changes and apply them later.
+3. Create an annotated Git tag for a commit.
+4. View all tags in a repository.
+5. Revert a specific commit.
+6. Squash multiple commits into one.
+7. Set a remote repository URL or change it.
+8. Fetch changes from remote without merging.
+9. Compare two branches to see differences.
+10. Clone a repository and check out a specific branch.
+
+**Solution***
+
+1. git merge branch_name
+   git add conflicted_file
+   git commit -m "Resolved merge conflict"
+2. git stash
+   git stash apply
+3. git tag -a v1.0 -m "version v1.01 release"
+4. git tag
+5. git revert commit_hash
+6. git rebase -i HEAD~3
+7. git remote set-url origin https://github.com/user/repo.git
+8. git fetch origin
+9. git diff branch1 branch2
+10. git clone -b branch_name https://github.com/user/repo.git

@@ -1,0 +1,27 @@
+**27-9-2025  Saturday**
+**Day 1. Linux Practice**
+
+1. Check the Linux version and kernel information.
+2. Display the current logged-in user.
+3. List all files in a directory, including hidden files.
+4. Create a new directory and navigate into it.
+5. Create a new empty file.
+6. View the contents of a file.
+7. Copy, move, and rename files.
+8. Delete files and directories.
+9. Display the present working directory (PWD).
+10. Check available disk space and memory usage.
+
+
+***Solution***
+
+1. uname -a
+2. whoami
+3. ls -la
+4. mkdir newone / cd newone
+5. touch empty.txt
+6. cat empty.txt
+7. cp empty.txt / mv empty.txt 
+8. rm empty.txt / rmkir empty.txt
+9. pwd
+10. df -h /free -h 

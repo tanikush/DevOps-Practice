@@ -1,0 +1,28 @@
+**28-9-2025  Sunday**
+**Day 2. Docker Practice**
+
+
+1. Check detailed information about your Docker system (storage, CPU, memory).
+2. Inspect a running container for its configuration and network settings.
+3. Rename a running or stopped container.
+4. Start a stopped container.
+5. Restart a running container.
+6. View logs of a running container.
+7. Execute a command inside a running container.
+8. Commit a container as a new image.
+9. Tag an image with a new name/version.
+10. Run a container in detached mode and map a port to the host.
+
+
+***Solution***
+
+1. docker info
+2. docker inspect container_id
+3. docker rename old_name or new_name
+4. docker start container_id or name
+5. docker restart container_id or name
+6. docker logs container_id or name
+7. docker exec -it container_id bash
+8. docker commit container newimage:tag
+9. docker tag ubuntu:latest myubuntu:1.0
+10. docker run -d -p host_port:container_port imagename | Example: docker run -d -p 8080:80 nginx

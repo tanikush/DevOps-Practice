@@ -1,0 +1,28 @@
+**28-9-2025  Sunday**
+**Day 2. Git & GitHub Practice**
+
+1. Check the current configuration of Git (username, email, default editor).
+2. View the difference between working directory and staging area.
+3. Remove a file from staging without deleting it from the folder.
+4. Rename a file and stage the changes.
+5. Undo the last commit but keep the changes in the working directory.
+6. View changes made in a specific commit.
+7. Delete a branch locally.
+8. Delete a branch on GitHub (remote).
+9. Push a local branch to GitHub for the first time.
+10. Pull changes from the remote repository to your local repository.
+
+***Solution***
+
+1. git config --list
+2. git diff
+3. git reset filename.txt
+4. git mv oldfilename.txt newfilename.txt 
+# git add filename.txt
+5. git reset --soft HEAD~1
+6. git show commit_hash | 
+#Example: git show a1b2c3d
+7. git branch -d branch_name
+8. git push origin --delete branch_name
+9. git push -u origin branch_name
+10. git pull origin main
