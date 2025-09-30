@@ -26,17 +26,20 @@ DevOps-Practice/
 ├─ Linux/
 │   ├─ Day1/  → Tasks + solutions
 │   ├─ Day2/
-│   └─ Day3/
+|   ├─ Day3/
+│   └─ Day4/
 │
 ├─ Docker/
 │   ├─ Day1/
 │   ├─ Day2/
-│   └─ Day3/
-│
+|   ├─ Day3/
+│   └─ Day4/
+|
 └─ Git-GitHub/
 ├─ Day1/
-├─ Day2/
-└─ Day3/
+├─ ├─ Day2/
+|  ├─ Day3/
+│  └─ Day4/
 
 
 
@@ -48,16 +51,22 @@ DevOps-Practice/
 - **Day 1:** Basic commands, directory & file management  
 - **Day 2:** Networking, user management  
 - **Day 3:** Permissions, system monitoring  
+- **Day 4:** Package management, services, system info  
+
 
 ### Docker
 - **Day 1:** Installation & container basics  
 - **Day 2:** Docker images, containers & commands  
 - **Day 3:** Docker networking & multi-container setups  
+- **Day 4:** Docker volumes, networks, image export/import  
+
 
 ### Git & GitHub
 - **Day 1:** Git setup, commits, branches  
 - **Day 2:** Remote repositories, push & pull  
 - **Day 3:** Collaboration, merge conflicts, pull requests  
+- **Day 4:** Export/import repos, save/load images, clean workflows  
+
 
 
 
