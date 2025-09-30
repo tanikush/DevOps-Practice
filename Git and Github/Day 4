@@ -1,0 +1,32 @@
+
+### **30-9-2025 Tuesday**
+
+## **Day 4 – Advanced Git & GitHub Collaboration**
+
+1. **Fork a repository from GitHub and clone it locally.**
+2. **Set the original repository as an upstream remote.**
+3. **Fetch updates from the upstream repository.**
+4. **Rebase your branch on top of the upstream main branch.**
+5. **Open a pull request on GitHub.**
+6. **Use GitHub Issues to track a bug or feature.**
+7. **Assign a collaborator to a GitHub Issue.**
+8. **Use `git blame` to find who last modified each line in a file.**
+9. **Create a `.gitignore` file and add rules to ignore specific files/folders.**
+10. **Generate and add an SSH key to your GitHub account for authentication.**
+
+***Solution***
+
+1. git clone https://github.com/username/repo.git
+2. git remote add upstream https://github.com/original-owner/original-repo.git
+3. git fetch upstream
+4. git rebase upstream/main
+5. no CLI command  — go to GitHub and open a Pull Request via the website
+6. no CLI command — go to GitHub -> Issues -> New Issue
+7. no CLI command — on the GitHub issue page, use the "Assignees" sidebar
+8. git blame filename.txt
+9. touch .gitignore
+    echo "node_modules/" >> .gitignore
+    echo "*.log" >> .gitignore
+    cat .gitignore
+
+10. ssh-keygen -t ed25519 -C "cat_email@gmail.com"

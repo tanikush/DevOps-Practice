@@ -1,0 +1,52 @@
+
+**30-9-2025 Tuesday**
+
+**Day 4 – Advanced Docker Practice**
+
+1. Create a `docker-compose.yml` file and start a multi-container app.
+2. Scale a service in Docker Compose to multiple containers.
+3. View Docker Compose logs for all services.
+4. Use `.dockerignore` to exclude files during image build.
+5. Scan a Docker image for vulnerabilities using `docker scan`.
+6. Check the history of a Docker image.
+7. Export a container to a `.tar` file.
+8. Import a container from a `.tar` file.
+9. Save a Docker image to a `.tar` archive.
+10. Load a Docker image from a `.tar` archive.
+
+***Solution***
+
+1. nano/ notepad docker-compose.yml 
+version: '3'
+services:
+  web:
+    image: nginx
+    ports:
+      - "8080:80"
+  redis:
+    image: redis
+
+    docker-compose up -d
+
+2.  version: '3'
+services:
+  web:
+    image: nginx
+  redis:
+    image: redis
+
+    docker-compose up -d --scale web=3
+3.  docker-compose logs
+4. echo "node_modules" > .dockerignore
+   echo "*.log" >> .dockerignore
+5. npm install -g snyk
+   snyk container test nginx
+6. docker history nginx
+7.  docker ps -a
+    docker export tanisha-web-1 > web.tar (container)
+    docker save nginx > nginx_image.tar (image)
+8. cat web.tar | docker import - nginx
+9. docker save nginx > nginx.tar (image)
+    ls -lh nginx.tar
+
+10. docker load < nginx.tar
